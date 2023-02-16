@@ -5,16 +5,16 @@ dns:
   - https+local://8.8.8.8/dns-query
 inbounds:
 - port: 8080
-  protocol: trojan
+  protocol: vless
   settings:
     clients:
-    - password: "123"
+    - UUID: "88b68d9f-88c1-4079-8f61-b22238f6677f"
   streamSettings:
     network: ws
     wsSettings:
       path: qwe
   sniffing:
-    enabled: true
+    enabled: flase
     destOverride:
     - http
     - tls
